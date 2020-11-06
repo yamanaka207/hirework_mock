@@ -8,14 +8,13 @@ header#header-wrap {
   a.navbar-brand {
     padding-top: 12px;
     width: 240px;
+    @media (max-width: 768px){
+      width: 160px;
+    }
     img {
       width: 100%;
       margin-bottom: 8px;
     }
-  }
-  @media (max-width: 768px){
-  a.navbar-brand {
-    width: 160px;
   }
   nav.navbar.navbar-light {
     button.navbar-toggler {
@@ -26,7 +25,7 @@ header#header-wrap {
     ul.nav-inline {
       margin-top: 0px;
     }
-  }}
+  }
   #main-menu {
     ul.nav {
       font-size: 0;
@@ -35,22 +34,21 @@ header#header-wrap {
           color: white;
           font-size: 14px;
           padding: 50px 8px 20px 8px;
+          @media (max-width: 768px){
+            font-size: 14px;
+            padding: 10px 10px 10px 18px;
+          }
         }
-        @media (max-width: 768px){
-        a.nav-link {
-          color: white;
-          font-size: 14px;
-          padding: 10px 10px 10px 18px;
-        }}
         img {
           width: 28px;
           margin: 0px 4px 16px 4px;
         }
       }
-      @media (max-width: 768px){
       li.nav-item.img, li.nav-item.last {
-        display: none;
-      }}
+        @media (max-width: 768px){
+          display: none;
+        }
+      }
       li.nav-item.img {
         a {
           padding: 0;
@@ -111,56 +109,55 @@ section.main-image {
   background-image: url("../img/search_results01_header_image.jpg");
   background-size: cover;
   padding: 120px 0;
+  @media (max-width: 768px){
+    padding: 60px 0;
+  }
   div.title-box {
     width: 60%;
     background-color: white;
     opacity: 0.8;
     padding: 20px 0px;
+    @media (max-width: 768px){
+      padding: 12px 0px;
+    }
     h1.title {
       color: #333;
       font-size: 28px;
+      @media (max-width: 768px){
+        font-size: 20px;
+      }
       margin-left: 20%;
       margin-bottom: 0px;
     }
   }
 }
-@media (max-width: 768px){
-.section.main-image {
-  padding: 60px 0;
-  div.title-box {
-    padding: 12px 0px;
-    h1.title {
-      font-size: 20px;
-    }
-  }
-}}
 section.band-image {
   background-image: url("../img/title_background_watercolor_pattern01.jpg");
   padding: 20px 0;
+  @media (max-width: 768px){
+    padding: 16px 0;
+  }
   h1.title, div.sub-title {
     text-align: center;
     color: #333;
   }
   h1.title {
     font-size: 28px;
-  }
-}
-@media (max-width: 768px){
-.section.band-image {
-  padding: 16px 0;
-  h1.title {
-    font-size: 22px;
+    @media (max-width: 768px){
+      font-size: 22px;
+    }
   }
   div.sub-title {
-    font-size: 12px;
+    @media (max-width: 768px){
+      font-size: 12px;
+    }
   }
-}}
-@media (max-width: 480px) and (min-width: 320px){
-.section.band-image {
   .row {
-    padding: 0px 0px 0px;
+    @media (max-width: 480px) and (min-width: 320px){
+      padding: 0px 0px 0px;
+    }
   }
-}}
+}
 
 // -----リクルートページ-----
 section.recruit {
