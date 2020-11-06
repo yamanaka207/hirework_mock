@@ -1,9 +1,8 @@
 // -----全体デザイン-----
 @media (min-width: 768px){
-  .container {
+.container, section, header, footer {
     min-width: 1200px;
-  }
-}
+}}
 header#header-wrap {
   background-color: black;
   a.navbar-brand {
@@ -105,5 +104,156 @@ footer {
   }
   p.copyright-text, ul.nav .nav-link {
     color: white;
+  }
+}
+
+section.main-image {
+  background-image: url("../img/search_results01_header_image.jpg");
+  background-size: cover;
+  padding: 120px 0;
+  div.title-box {
+    width: 60%;
+    background-color: white;
+    opacity: 0.8;
+    padding: 20px 0px;
+    h1.title {
+      color: #333;
+      font-size: 28px;
+      margin-left: 20%;
+      margin-bottom: 0px;
+    }
+  }
+}
+@media (max-width: 768px){
+.section.main-image {
+  padding: 60px 0;
+  div.title-box {
+    padding: 12px 0px;
+    h1.title {
+      font-size: 20px;
+    }
+  }
+}}
+section.band-image {
+  background-image: url("../img/title_background_watercolor_pattern01.jpg");
+  padding: 20px 0;
+  h1.title, div.sub-title {
+    text-align: center;
+    color: #333;
+  }
+  h1.title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px){
+.section.band-image {
+  padding: 16px 0;
+  h1.title {
+    font-size: 22px;
+  }
+  div.sub-title {
+    font-size: 12px;
+  }
+}}
+@media (max-width: 480px) and (min-width: 320px){
+.section.band-image {
+  .row {
+    padding: 0px 0px 0px;
+  }
+}}
+
+// -----リクルートページ-----
+section.recruit {
+  table.form-table {
+    width: 900px;
+    @media (max-width: 768px){
+      width: 100%;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    th, td {
+      border: silver solid 1px;
+      color: #333;
+    }
+    th {
+      background-color: #F0F0F0;
+      width: 250px;
+      padding-left: 15px;
+      @media (max-width: 768px){
+        width: 20%;
+        padding-left: 5px;
+        font-size: 12px;
+      }
+      span.must-text {
+        color: #F13781;
+      }
+    }
+    td {
+      position: relative;
+      padding: 20px 25px 20px 25px;
+      width: 650px;
+      @media (max-width: 768px){
+        width: 80%;
+        padding: 15px 15px 15px 15px;
+      }
+      input.must-input {
+        background-color: #FFE8FA;
+      }
+      select.must-select {
+        background-color: #FFE8FA;
+      }
+      input {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        border: silver solid 1px;
+        padding: 6px 0px 6px 10px;
+        @media (max-width: 768px){
+          padding: 4px 0px 4px 8px;
+        }
+        outline: none;
+      }
+      select {
+        height: 36px;
+        width: 100%;
+      }
+      label {
+        position: absolute;
+        bottom: 7px;
+        font-size: 10px;
+        line-height: 10px;
+        left: 25px;
+        margin: 0px;
+        @media (max-width: 768px){
+          bottom: 3px;
+          font-size: 10px;
+          line-height: 10px;
+        }
+      }
+      textarea {
+        width: 100%;
+        outline: none;
+        border-radius: 12px;
+        border: silver solid 1px;
+        padding: 6px 10px;
+      }
+    }
+  }
+  .detail-btn-box {
+    button {
+      margin-top: 20px;
+      @media (max-width: 768px){
+        margin-top: 0px;
+      }
+      background-color: #00ACC3;
+      border-radius: 5px;
+    }
+    p {
+      margin-top: 10px;
+      a {
+          color: #333;
+          text-decoration: underline;
+      }
+    }
   }
 }
