@@ -1,8 +1,34 @@
 // -----全体デザイン-----
+body {
+  color: black;
+}
 @media (min-width: 768px){
 .container, section, header, footer {
     min-width: 1200px;
 }}
+@media (min-width: 768px){
+  // pc共通
+  .sp {
+    display: none;
+  }
+  .section {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 768px){
+  // sp共通
+  .pc {
+    display: none;
+  }
+  .section {
+    padding: 20px 0;
+  }
+  .row {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 header#header-wrap {
   background-color: black;
   a.navbar-brand {
@@ -104,9 +130,7 @@ footer {
     color: white;
   }
 }
-
 section.main-image {
-  background-image: url("../img/search_results01_header_image.jpg");
   background-size: cover;
   padding: 120px 0;
   @media (max-width: 768px){
@@ -121,13 +145,20 @@ section.main-image {
       padding: 12px 0px;
     }
     h1.title {
-      color: #333;
       font-size: 28px;
       @media (max-width: 768px){
         font-size: 20px;
       }
       margin-left: 20%;
       margin-bottom: 0px;
+    }
+    p {
+      margin-left: 20%;
+      margin-bottom: 0px;
+      font-size: 18px;
+      @media (max-width: 768px){
+        font-size: 10px;
+      }
     }
   }
 }
@@ -159,7 +190,193 @@ section.band-image {
   }
 }
 
+// -----トップページ-----
+section.main-image.top {
+  background-image: url("../img/top_header_image_nontext.jpg");
+  .title{
+    position: relative;
+    img {
+      position: absolute;
+      width: 200px;
+      top: -35px;
+      left: 180px;
+      @media (max-width: 768px){
+        width: 100px;
+        top: -10px;
+        left: 120px;
+      }
+    }
+  }
+}
+section.top {
+  .container.search {
+    .select-input-col, .checkbox-col {
+      @media (min-width: 768px){
+        padding-right: 0;
+        padding-left: 0;
+      }
+      @media (max-width: 768px){
+        padding-right: 0;
+      }
+    }
+    select.job-type-select, select.employment-type-select {
+      display: inline-block;
+      width: 47%;
+      @media (max-width: 768px){
+        width: 46%;
+      }
+      margin-bottom: 8px;
+      height: 36px;
+      font-size: 14px;
+    }
+    .cross-text {
+      width: 4%;
+      text-align: center;
+      display: inline-block;
+    }
+    .search-text {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .search-btn {
+      width: 160px;
+      height: 80px;
+      border-radius: 5px;
+      background-color: #00ACC3;
+      font-size: 20px;
+      i {
+        transform: scale(-1, 1);
+        margin-right: 5px;
+      }
+      @media (max-width: 768px){
+        width: 100%;
+        height: 78px;
+        padding: 6px 6px;
+        font-size: 16px;
+      }
+    }
+    input[type=checkbox] {
+      margin-right: 3px;
+    }
+    .checkbox-label {
+      margin: 4px 8px 0px 0px;
+    }
+    .deatil-link-btn {
+      display: block;
+      background-color: black;
+      color: white;
+      width: 160px;
+      margin: 16px auto 0px auto;
+      padding: 4px 0px;
+      text-align: center;
+      border-radius: 5px;
+    }
+  }
+  .container.wanted {
+    .emeraldgreen {
+      h2 {
+        background-color: #00ACC3;
+      }
+      h4 {
+        color: #00ACC3;
+      }
+      a.detail-btn {
+        background-color: #00ACC3;
+      }
+    }
+    .purple {
+      h2 {
+        background-color: #BB92E2;
+      }
+      h4 {
+        color: #BB92E2;
+      }
+      a.detail-btn {
+        background-color: #BB92E2;
+      }
+    }
+    .row {
+      margin: 60px 0px 60px 0px;
+      @media (max-width: 768px){
+        margin: 30px 0px 30px 0px;
+      }
+    }
+    .left-image {
+      width: 100%;
+    }
+    h2.left-image-under-text {
+      text-align: center;
+      padding: 10px 20px;
+      @media (max-width: 768px){
+        padding: 5px 10px;
+      }
+      color: white;
+      .alphabet-text {
+        font-size: 24px;
+        @media (max-width: 768px){
+          font-size: 18px;
+        }
+      }
+      .kana-text {
+        font-size: 16px;
+        @media (max-width: 768px){
+          font-size: 12px;
+        }
+      }
+    }
+    h3, h4 {
+      font-size: 16px;
+      @media (max-width: 768px){
+        font-size: 14px;
+      }
+    }
+    h3 {
+      line-height: 1.8;
+      text-decoration: underline;
+      margin-bottom: 0px;
+    }
+    h4 {
+      margin-top: 20px;
+    }
+    ol {
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+    a.detail-btn {
+      display: block;
+      width: 220px;
+      text-align: center;
+      padding: 8px 16px;
+      margin-right: auto;
+      margin-left: auto;
+      color: white;
+      border-radius: 5px;
+      @media (max-width: 768px){
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+    }
+    a.contact-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: #C4C763;
+      border-radius: 5px;
+      font-size: 20px;
+      padding: 20px 0px;
+      @media (max-width: 768px){
+        font-size: 14px;
+        padding: 12px 0px;
+      }
+    }
+  }
+}
+
 // -----リクルートページ-----
+section.main-image.entry {
+  background-image: url("../img/search_results01_header_image.jpg");
+}
 section.recruit {
   table.form-table {
     width: 900px;
@@ -240,9 +457,6 @@ section.recruit {
     text-align: center;
     button {
       margin-top: 20px;
-      @media (max-width: 768px){
-        margin-top: 0px;
-      }
       background-color: #00ACC3;
       border-radius: 5px;
     }
