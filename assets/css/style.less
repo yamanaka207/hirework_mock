@@ -604,12 +604,12 @@ section.search-results {
         position: absolute;
         right: 0;
         bottom: 0;
-      }
-      .fav-img {
-        position: absolute;
-        left: 20px;
-        top: -14px;
-        width: 30px;
+        .fav-img {
+          position: absolute;
+          left: 20px;
+          top: -14px;
+          width: 30px;
+        }
       }
     }
     .info-table {
@@ -676,5 +676,198 @@ section.search-results {
       margin-top: 12px;
       background-color: #EAEFFB;
     }
+  }
+}
+
+// -----検索結果詳細ページ-----
+.search-results-detail {
+  @media (min-width: 768px){
+    .container {
+      min-width: 1000px;
+    }
+    .col-md-690 {
+      width: 690px;
+      margin: 0px 30px 0px 0px;
+      padding: 0px 10px 0px 10px;
+    }
+    .col-md-280 {
+      width: 280px;
+      padding: 0px;
+    }
+  }
+  h2.title {
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  .pickup-btn {
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 4px;
+    color: white;
+    background-color: #00ACC3;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: -6px;
+  }
+  .three-img-box {
+    margin-top: 12px;
+    display: flex;
+    @media (max-width: 768px){
+      display: block;
+    }
+    .left-box {
+      width: 460px;
+      @media (max-width: 768px){
+        width: 100%;
+      }
+      margin-right: 20px;
+      img.main-img {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .right-box {
+      @media (max-width: 768px){
+        display: none;
+      }
+      width: 170px;
+      .sub1-img {
+        width: 100%;
+        height: 170px;
+        margin-bottom: 20px;
+      }
+      .sub2-img {
+        width: 100%;
+        height: 110px;
+      }
+    }
+  }
+  h2.salon-name-label {
+    font-size: 18px;
+    margin-top: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .info-table {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    th, td {
+      padding: 10px 20px;
+      @media (max-width: 768px){
+        padding: 6px 14px;
+      }
+      border: #A1CAEA solid 1px;
+    }
+    th {
+      font-size: 14px;
+      text-align: center;
+      background-color: #EAEFFB;
+    }
+    td {
+      font-size: 13px;
+      width: 70%;
+    }
+  }
+  .more-info-label {
+    margin-bottom: 24px;
+    border: silver solid 1px;
+    border-left: #00ACC3 solid 8px;
+    padding: 10px 10px;
+  }
+  .right-panel {
+    border: #00ACC3 solid 1px;
+    border-top: #00ACC3 solid 8px;
+    padding: 6px 12px;
+    margin-bottom: 24px;
+    div.block:not(:last-child) {
+      border-bottom: #00ACC3 solid 1px;
+    }
+    div.block {
+      padding: 14px 0px;
+    }
+    div.block:first-child {
+      padding: 8px 0px;
+    }
+    .tag-btn {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      font-size: 14px;
+      line-height: 1;
+      padding: 6px 6px;
+      border: none;
+      border-radius: 5px;
+    }
+    .tag-gray {
+      background-color: #8E8E8E;
+    }
+    .fav-btn {
+      display: inline-block;
+      background-color: #CFCE7B;
+      color: black;
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1;
+      padding: 18px 6px 8px 6px;
+      border: none;
+      border-radius: 5px;
+      position: relative;
+      font-size: 10px;
+      @media (max-width: 768px){
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      .fav-img {
+        position: absolute;
+        left: 21px;
+        top: -6px;
+        width: 20px;
+        @media (max-width: 768px){
+          display: none;
+        }
+      }
+    }
+    .apply-btn {
+      display: inline-block;
+      background-color: #DD81D0;
+      color: white;
+      font-size: 14px;
+      line-height: 1;
+      border: none;
+      border-radius: 5px;
+      padding: 11px 38px;
+      position: relative;
+      top: -4px;
+      @media (max-width: 768px){
+        display: block;
+        width: 100%;
+        position: static;
+        padding: 12px;
+      }
+    }
+    .saron-name {
+      font-size: 16px;
+    }
+    .tell {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  img.banner {
+    width: 100%;
+    margin-bottom: 24px;
   }
 }
