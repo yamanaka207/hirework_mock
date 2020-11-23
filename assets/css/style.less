@@ -569,6 +569,7 @@ section.search-results {
   .container {
     @media (min-width: 768px){
       min-width: 1000px;
+      max-width: 1000px;
     }
   }
   .item {
@@ -576,14 +577,6 @@ section.search-results {
     border-top: #00ACC3 solid 8px;
     padding-top: 12px;
     margin-bottom: 48px;
-    @media (min-width: 768px){
-      .col-md-46 {
-        width: 46%;
-      }
-      .col-md-54 {
-        width: 54%;
-      }
-    }
     h2 {
       font-size: 22px;
       font-weight: bold;
@@ -602,7 +595,11 @@ section.search-results {
       top: -6px;
     }
     .left-image {
-      width: 100%;
+      width: 460px;
+      height: 380px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .left-text {
       margin-top: 8px;
