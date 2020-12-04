@@ -932,3 +932,208 @@ section.main-image.search-results-detail {
     margin-bottom: 24px;
   }
 }
+
+
+// -----検索画面-----
+section.search-form {
+  table.form-table {
+    width: 900px;
+    @media (max-width: 768px){
+      width: 100%;
+    }
+    margin-right: auto;
+    margin-left: auto;
+    th, td {
+      border: silver solid 1px;
+      color: #333;
+    }
+    th {
+      background-color: #F0F0F0;
+      width: 250px;
+      padding-left: 15px;
+      @media (max-width: 768px){
+        width: 20%;
+        padding-left: 5px;
+        font-size: 12px;
+      }
+    }
+    td {
+      position: relative;
+      padding: 20px 25px 20px 25px;
+      width: 650px;
+      @media (max-width: 768px){
+        width: 80%;
+        padding: 15px 15px 15px 15px;
+      }
+      input.keyword {
+        display: block;
+        width: 100%;
+        border-radius: 8px;
+        border: #87D9E3 solid 1px;
+        padding: 6px 0px 6px 10px;
+        @media (max-width: 768px){
+          padding: 4px 0px 4px 8px;
+          font-size: 14px;
+        }
+        outline: none;
+      }
+      input.keyword::placeholder {
+        color: #87D9E3;
+      }
+      /* IE */
+      input.keyword:-ms-input-placeholder {
+        color: #87D9E3;
+      }
+      /* Edge */
+      input.keyword::-ms-input-placeholder {
+        color: #87D9E3;
+      }
+      select {
+        height: 36px;
+        width: 100%;
+        border: #87D9E3 solid 1px;
+        @media (max-width: 768px){
+          height: 32px;
+          font-size: 14px;
+        }
+      }
+      input[type=radio] {
+        display: inline;
+        width: auto;
+      }
+      button {
+        margin: 3px 1px;
+        display: inline;
+        width: auto;
+        padding: 5px 17px;
+        @media (max-width: 768px){
+          font-size: 12px;
+          padding: 3px 15px;
+        }
+      }
+      button.active {
+        padding: 6px 18px;
+        @media (max-width: 768px){
+          padding: 4px 16px;
+        }
+        border: none;
+        color: white;
+        background: linear-gradient(-135deg, #00B6CC, #CC99FF);
+      }
+      button:hover {
+        color: #55595c;
+      }
+      .radio {
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 8px;
+        label {
+          padding-left: 0px;
+        }
+        input[type="radio"] {
+          position: absolute;
+          opacity: 0;
+          + .radio-label {
+            &:before {
+              content: '';
+              background: white;
+              border-radius: 100%;
+              border: 1px solid darken(white, 25%);
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              position: relative;
+              top: 2px;
+              margin-right: 4px;
+              vertical-align: top;
+              cursor: pointer;
+              text-align: center;
+              transition: all 250ms ease;
+            }
+          }
+          &:checked {
+            + .radio-label {
+              &:before {
+                background: linear-gradient(-135deg, #00B6CC, #CC99FF);
+                box-shadow: inset 0 0 0 2px white;
+              }
+            }
+          }
+          &:focus {
+            + .radio-label {
+              &:before {
+                outline: none;
+              }
+            }
+          }
+          &:disabled {
+            + .radio-label {
+              &:before {
+                box-shadow: inset 0 0 0 2px white;
+                border-color: darken(white, 25%);
+                background: darken(white, 25%);
+              }
+            }
+          }
+          + .radio-label {
+            &:empty {
+              &:before {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      select.salary_select {
+        display: inline-block;
+        width: 50%;
+        @media (max-width: 768px){
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn-box {
+    margin-top: 48px;
+    @media (max-width: 768px){
+      margin-top: 24px;
+    }
+    text-align: center;
+    button {
+      display: inline-block;
+      color: white;
+      border: none;
+      font-size: 20px;
+      @media (max-width: 768px){
+        font-size: 16px;
+      }
+    }
+    button:hover {
+      color: white;
+    }
+    button.reset {
+      width: 200px;
+      height: 70px;
+      @media (max-width: 768px){
+        width: 100%;
+        height: 48px;
+        margin-bottom: 12px;
+      }
+      margin-right: 24px;
+      background-color: black;
+    }
+    button.submit {
+      width: 300px;
+      height: 70px;
+      @media (max-width: 768px){
+        width: 100%;
+        height: 48px;
+      }
+      background-color: #00B6CC;
+      i {
+        transform: scale(-1, 1);
+        margin-right: 5px;
+      }
+    }
+  }
+}

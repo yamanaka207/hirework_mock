@@ -1,0 +1,334 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Viewport Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HIREWORK</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!--Fonts-->
+    <link rel="stylesheet" media="screen" href="assets/fonts/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="assets/fonts/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+    <!-- 筑紫丸ゴシック読み込み -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'qyg3cne',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
+    <!-- original -->
+    <link rel="stylesheet/less" type="text/css" href="assets/css/style.less">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+  </head>
+  <body>
+    <header id="header-wrap">
+      <section id="header">
+        <nav class="navbar navbar-light" data-spy="affix" data-offset-top="50">
+          <div class="container">
+            <button class='navbar-toggler hidden-md-up pull-xs-right' data-target='#main-menu' data-toggle='collapse' type='button'>
+              ☰
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/main_logo.png">
+            </a>
+            <div class="collapse navbar-toggleable-sm" id="main-menu">
+              <ul class="nav nav-inline">
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">求人検索</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">オススメ求人</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">特集記事</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">お気に入り</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">閲覧履歴</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">よくある質問</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" aria-haspopup="true" aria-expanded="false">サロン管理画面</a>
+                </li>
+                <li class="nav-item dropdown img">
+                  <a href="#"><img src="./assets/img/insta_icon.png"></a>
+                </li>
+                <li class="nav-item dropdown img">
+                  <a href="#"><img src="./assets/img/twitter_icon.png"></a>
+                </li>
+                <li class="nav-item dropdown img">
+                  <a href="#"><img src="./assets/img/line_icon.png"></a>
+                </li>
+                <li class="nav-item dropdown pull-right last">
+                  <a href="#"></a>
+                  <img src="./assets/img/lock_icon.png">
+                  <div class="login-text">新規登録・ログイン</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <section class="section bread-crumb">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#">HAIRWORKSホーム</a>
+            <a href="#">美容師・美容室 求人検索</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band-image">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="title">SEARCH</h1>
+            <div class="sub-title">あなたにぴったりのサロンの求人を検索する</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section search-form">
+      <div class="container">
+        <form method="POST" action=""></form>
+          <div class="row">
+            <div class="col-xs-12">
+              <table class="form-table">
+                <tbody>
+                  <tr>
+                    <th>勤務地から探す</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">都道府県</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>職種・技術ランク</th>
+                    <td>
+                      <button class="form-control active">スタイリスト</button>
+                      <button class="form-control">アシスタント</button>
+                      <button class="form-control">カラーリスト</button>
+                      <button class="form-control">スタイリスト</button>
+                      <button class="form-control">アシスタント</button>
+                      <button class="form-control">カラーリスト</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>雇用形態</th>
+                    <td>
+                      <button class="form-control active">正社員</button>
+                      <button class="form-control">契約社員・パート</button>
+                      <button class="form-control">業務委託・フリーランス</button>
+                      <button class="form-control">正社員</button>
+                      <button class="form-control">正社員</button>
+                      <button class="form-control">契約社員・パート</button>
+                      <button class="form-control">業務委託・フリーランス</button>
+                      <button class="form-control">正社員</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>キーワード</th>
+                    <td><input type="text" class="form-control keyword" placeholder="サロン名・キーワードで検索"></td>
+                  </tr>
+                  <tr>
+                    <th>給与</th>
+                    <td>
+                      <div class="radio">
+                        <input id="month" name="salary_kind" type="radio" checked>
+                        <label for="month" class="radio-label">月給</label>
+                      </div>
+                      <div class="radio">
+                        <input id="time" name="salary_kind" type="radio">
+                        <label for="time" class="radio-label">時給</label>
+                      </div>
+                      <div class="radio">
+                        <input id="commission" name="salary_kind" type="radio">
+                        <label for="commission" class="radio-label">歩合</label>
+                      </div>
+                      <select class="form-control salary_select">
+                        <option value="">月給を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>休日</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">休日を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>待遇・条件</th>
+                    <td>
+                      <button class="form-control active">社会保障完備</button>
+                      <button class="form-control active">完全週休二日制</button>
+                      <button class="form-control">土日休み可</button>
+                      <button class="form-control active">社会保障完備</button>
+                      <button class="form-control active">完全週休二日制</button>
+                      <button class="form-control">土日休み可</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>教育・研修</th>
+                    <td>
+                      <button class="form-control active">デビューまで2年以内</button>
+                      <button class="form-control">ヘアショー・撮影会・コンテスト</button>
+                      <button class="form-control">雑誌撮影</button>
+                      <button class="form-control active">デビューまで2年以内</button>
+                      <button class="form-control">ヘアショー・撮影会・コンテスト</button>
+                      <button class="form-control">雑誌撮影</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>経験・資格</th>
+                    <td>
+                      <button class="form-control active">ブランクOK</button>
+                      <button class="form-control">未経験者可</button>
+                      <button class="form-control">管理美容師免許歓迎</button>
+                      <button class="form-control active">ブランクOK</button>
+                      <button class="form-control">未経験者可</button>
+                      <button class="form-control">管理美容師免許歓迎</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>店舗の特徴</th>
+                    <td>
+                      <button class="form-control active">ニューオープン(オープン3ヶ月以内)</button>
+                      <button class="form-control">新規フリー客多数</button>
+                      <button class="form-control">カット4000円以上</button>
+                      <button class="form-control active">ニューオープン(オープン3ヶ月以内)</button>
+                      <button class="form-control">新規フリー客多数</button>
+                      <button class="form-control">カット4000円以上</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>在籍スタッフ</th>
+                    <td>
+                      <button class="form-control active">スタッフ10名以下</button>
+                      <button class="form-control">ママさんスタッフ在籍中</button>
+                      <button class="form-control">スタッフ平均年齢30歳以上</button>
+                      <button class="form-control active">スタッフ10名以下</button>
+                      <button class="form-control">ママさんスタッフ在籍中</button>
+                      <button class="form-control">スタッフ平均年齢30歳以上</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>店舗数</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">店舗数を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>駅からの所要時間</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">駅からの所要時間を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>店舗のスタッフ数</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">店舗のスタッフ数を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>セット面(ブース/ベッド数)</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">セット面(ブース/ベッド数)を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>シャンプー台数</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">シャンプー台数を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>顧客単価</th>
+                    <td>
+                      <select class="form-control">
+                        <option value="">顧客単価を選択</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="btn-box">
+                <button class="form-control reset">条件をリセット</button>
+                <button class="form-control submit"><i class="fa fa-search"></i>検索結果を見る</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="nav nav-inline">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">利用規約</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">個人情報保護号審</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">会社概要</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">お問い合わせ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12">
+              <p class="copyright-text">
+                Copyright(C)HAIR WORKS All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery Load -->
+    <script src="assets/js/jquery-min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
