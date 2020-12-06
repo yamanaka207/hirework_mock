@@ -1001,32 +1001,24 @@ section.search-form {
         display: inline;
         width: auto;
       }
-      button {
-        margin: 3px 1px;
-        display: inline;
-        width: auto;
-        padding: 5px 17px;
-        @media (max-width: 768px){
-          font-size: 12px;
-          padding: 3px 15px;
+      .checkbox-btn {
+        display: inline-block;
+        label{
+          cursor: pointer;
+          padding: 5px 15px;
+          border: 1px solid silver;
+          border-radius: 5px;
+        }
+        input {
+          display: none;
+        }
+        input:checked + label {
+          background: linear-gradient(-135deg, #00B6CC, #CC99FF);
+          border: none;
+          color: white;
+          padding: 6px 16px;
         }
       }
-      button.active {
-        padding: 6px 18px;
-        @media (max-width: 768px){
-          padding: 4px 16px;
-        }
-        border: none;
-        color: white;
-        background: linear-gradient(-135deg, #00B6CC, #CC99FF);
-      }
-      button.active:hover {
-        color: white;
-      }
-      button:hover {
-        color: #55595c;
-      }
-      
       .radio {
         display: inline-block;
         margin-bottom: 0px;
