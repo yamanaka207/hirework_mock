@@ -142,6 +142,7 @@ footer {
     color: white;
   }
 }
+
 section.main-image {
   background-size: cover;
   padding: 120px 0;
@@ -175,6 +176,42 @@ section.main-image {
         font-size: 10px;
         margin-right: 5%;
       }
+    }
+  }
+}
+
+body {
+  // 固定フッター分を空ける
+  margin-bottom: 60px;
+}
+section.footer-menu {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  .item {
+    display:block;
+    padding: 8px;
+    text-align: center;
+    width: 20%;
+    color: white;
+    background-color: black;
+    line-height: 1;
+    font-size: 10px;
+    i {
+      margin-bottom: 4px;
+      font-size: 24px;
+      display: block;
+    }
+  }
+  .item.last {
+    background-color: #CFCE7B;
+    color: black;
+    img {
+      margin-bottom: 4px;
+      height: 50%;
     }
   }
 }
