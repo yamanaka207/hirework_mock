@@ -20,7 +20,7 @@ h2, h3, h4, h5, h6, p {
 @media (min-width: 768px){
   // pc共通
   .sp {
-    display: none;
+    display: none!important;
   }
   .section {
     padding: 40px 0;
@@ -29,7 +29,7 @@ h2, h3, h4, h5, h6, p {
 @media (max-width: 768px){
   // sp共通
   .pc {
-    display: none;
+    display: none!important;
   }
   .section {
     padding: 20px 0;
@@ -38,9 +38,6 @@ h2, h3, h4, h5, h6, p {
     padding-top: 0;
     padding-bottom: 0;
   }
-}
-button:focus {
-  outline:0;
 }
 
 header#header-wrap {
@@ -182,7 +179,9 @@ section.main-image {
 
 body {
   // 固定フッター分を空ける
-  margin-bottom: 60px;
+  @media (max-width: 768px){
+    margin-bottom: 60px;
+  }
 }
 section.footer-menu {
   display: flex;
@@ -239,11 +238,14 @@ section.footer-menu {
 
 section.band-image {
   background-image: url("../img/title_background_watercolor_pattern01.jpg");
+  background-size: cover;
   padding: 20px 0;
   @media (max-width: 768px){
     padding: 16px 0;
   }
   h1.title, div.sub-title {
+    font-weight: bold;
+    margin-top: 10px;
     text-align: center;
     color: #333;
   }
@@ -363,12 +365,16 @@ section.top {
       padding: 5px 10px;
       font-size: 14px;
     }
+    // .search-btn:active {
+    //   box-shadow: none;
+    // }
     .search-btn {
       width: 100%;
       height: 80px;
       border-radius: 5px;
       background-color: #00ACC3;
       font-size: 20px;
+      // box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, .3);
       i {
         transform: scale(-1, 1);
         margin-right: 5px;
@@ -457,6 +463,7 @@ section.top {
       }
     }
     h3 {
+      font-weight: bold;
       line-height: 1.8;
       text-decoration: underline;
       margin-bottom: 0px;
@@ -634,22 +641,25 @@ section.search-results {
     border-top: #00ACC3 solid 8px;
     padding-top: 12px;
     margin-bottom: 48px;
-    h2 {
-      font-size: 22px;
-      font-weight: bold;
-      display: inline-block;
-      margin-bottom: 0px;
-    }
-    .pickup-btn {
-      font-size: 12px;
-      line-height: 1;
-      padding: 4px 4px;
-      color: white;
-      background-color: #00ACC3;
-      border: none;
-      border-radius: 5px;
-      position: relative;
-      top: -6px;
+    .title-box {
+      margin-top: 10px;
+      h2 {
+        font-size: 22px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 0px;
+      }
+      .pickup-btn {
+        font-size: 12px;
+        line-height: 1;
+        padding: 4px 4px;
+        color: white;
+        background-color: #00ACC3;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        top: -6px;
+      }
     }
     .left-image {
       width: 460px;
@@ -663,6 +673,9 @@ section.search-results {
       margin-right: auto;
     }
     .left-text-box {
+      width: 460px;
+      margin-left: auto;
+      margin-right: auto;
       background-color: #E7E6BD;
       margin-top: 8px;
       padding: 12px;
