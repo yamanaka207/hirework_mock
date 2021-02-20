@@ -1207,3 +1207,121 @@ section.search-form {
     }
   }
 }
+
+// -----記事詳細ページ-----
+.article-detail {
+  @media (min-width: 768px){
+    .container {
+      min-width: 1000px;
+    }
+    .col-md-690 {
+      width: 690px;
+      margin: 0px 30px 0px 0px;
+      padding: 0px 10px 0px 10px;
+    }
+    .col-md-280 {
+      width: 280px;
+      padding: 0px;
+    }
+  }
+  .bar {
+    height: 8px;
+    background-color: black;
+    margin-bottom: 24px;
+  }
+  .article-contents{
+    h2 {
+      font-weight: bold;
+      font-size: 22px;
+      .tag {
+        color: white;
+        background-color: #B69DE5;
+        display: inline-block;
+        font-size: 12px;
+        padding: 6px 6px;
+        border-radius: 8px;
+        position: relative;
+        top: -4px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 13px;
+      margin: 30px 0px;
+    }
+  }
+  .btn-box {
+    text-align: center;
+    margin-top: 36px;
+    a {
+      border-radius: 6px;
+      color: white;
+      padding: 10px 20px;
+    }
+    .detail-btn {
+      background-color: #66B5CA;
+      margin-right: 24px;
+    }
+    .apply-btn {
+      background-color: #C98DD5;
+    }
+  }
+  .new-arrival-box {
+    border: #B6CFEB solid 1px;
+    .box-title {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 12px 0px;
+    }
+    .box-inner {
+      padding: 0px 16px;
+      .item {
+        font-weight: bold;
+        font-size: 13px;
+        padding: 16px 0px;
+        img {
+          display: block;
+          float: left;
+          width: 100px;
+          height: 100px;
+          margin-right: 8px;
+        }
+        &:not(:last-child) {
+          border-bottom: #B6CFEB solid 1px;
+        }
+      }
+    }
+  }
+  .archive-box {
+    margin: 24px 0px;
+    border: #B6CFEB solid 1px;
+    .box-title {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 12px 0px;
+    }
+    .box-inner {
+      padding: 0px 16px;
+      .item {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        padding: 6px 0px;
+        a {
+          color: black;
+        }
+        &:not(:last-child) {
+          border-bottom: #B6CFEB solid 1px;
+        }
+      }
+    }
+  }
+  img.banner {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
