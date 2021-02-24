@@ -1368,7 +1368,19 @@ section.article-list {
       border-top: #00ACC3 solid 8px;
       padding: 22px 12px 12px 12px;
       margin-bottom: 24px;
-      .tag {
+      position: relative;
+      z-index: 1;
+      a.cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-indent:-999px;
+        z-index: 2;
+      }
+      a.tag {
+        position: relative;
         font-size: 12px;
         line-height: 1;
         padding: 4px 4px;
@@ -1376,14 +1388,12 @@ section.article-list {
         background-color: #00ACC3;
         border: none;
         border-radius: 5px;
+        z-index: 3;
       }
       h2 {
         font-size: 22px;
         font-weight: bold;
         margin-bottom: 0px;
-        a {
-          color: #333;
-        }
         @media (max-width: 768px){
           font-size: 18px;
         }
