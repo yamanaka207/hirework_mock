@@ -1309,7 +1309,7 @@ section.search-form {
     }
   }
   .category-box {
-    margin: 24px 0px;
+    margin-bottom: 24px;
     border: #B6CFEB solid 1px;
     .box-title {
       background-color: black;
@@ -1341,6 +1341,20 @@ section.search-form {
 
 // -----記事一覧ページ-----
 section.article-list {
+  @media (min-width: 768px){
+    .container {
+      min-width: 1000px;
+    }
+    .col-md-690 {
+      width: 690px;
+      margin: 0px 30px 0px 0px;
+      padding: 0px 10px 0px 10px;
+    }
+    .col-md-280 {
+      width: 280px;
+      padding: 0px;
+    }
+  }
   padding-bottom: 0px;
   .container {
     @media (min-width: 768px){
@@ -1348,43 +1362,129 @@ section.article-list {
       max-width: 1000px;
     }
   }
-  .item {
-    border: #00ACC3 solid 1px;
-    border-top: #00ACC3 solid 8px;
-    padding: 22px 0px 12px 0px;
-    margin-bottom: 24px;
-    .title-box {
-      .tag {
-        font-size: 12px;
-        line-height: 1;
-        padding: 4px 4px;
-        color: white;
-        background-color: #00ACC3;
-        border: none;
-        border-radius: 5px;
-      }
-      h2 {
-        font-size: 22px;
-        font-weight: bold;
-        margin-bottom: 0px;
-        a {
-          color: #333;
+  .aritcle-list-box{
+    .item {
+      border: #00ACC3 solid 1px;
+      border-top: #00ACC3 solid 8px;
+      padding: 22px 12px 12px 12px;
+      margin-bottom: 24px;
+      .title-box {
+        .tag {
+          font-size: 12px;
+          line-height: 1;
+          padding: 4px 4px;
+          color: white;
+          background-color: #00ACC3;
+          border: none;
+          border-radius: 5px;
         }
-        @media (max-width: 768px){
-          font-size: 18px;
+        h2 {
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 0px;
+          a {
+            color: #333;
+          }
+          @media (max-width: 768px){
+            font-size: 18px;
+          }
         }
-      }
-      img {
-        width: 100px;
-        height: 100px;
-        float: left;
-        margin-right: 6px;
-      }
-      .date-text {
-        margin-top: 8px;
-        text-align: right;
-        color: gray;
+        img {
+          width: 100px;
+          height: 100px;
+          float: left;
+          margin-right: 6px;
+        }
+        .date-text {
+          margin-top: 8px;
+          text-align: right;
+          color: gray;
+        }
       }
     }
+  }
+  .new-arrival-box {
+    @media (max-width: 768px){
+      margin-top: 36px;
+    }
+    border: #B6CFEB solid 1px;
+    .box-title {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 12px 0px;
+    }
+    .box-inner {
+      padding: 0px 16px;
+      .item {
+        font-weight: bold;
+        font-size: 13px;
+        padding: 16px 0px;
+        img {
+          display: block;
+          float: left;
+          width: 100px;
+          height: 100px;
+          margin-right: 8px;
+        }
+        &:not(:last-child) {
+          border-bottom: #B6CFEB solid 1px;
+        }
+      }
+    }
+  }
+  .archive-box {
+    margin: 24px 0px;
+    border: #B6CFEB solid 1px;
+    .box-title {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 12px 0px;
+    }
+    .box-inner {
+      padding: 0px 16px;
+      .item {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        padding: 6px 0px;
+        a {
+          color: black;
+        }
+        &:not(:last-child) {
+          border-bottom: #B6CFEB solid 1px;
+        }
+      }
+    }
+  }
+  .category-box {
+    margin-bottom: 24px;
+    border: #B6CFEB solid 1px;
+    .box-title {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 12px 0px;
+    }
+    .box-inner {
+      padding: 0px 16px;
+      .item {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: center;
+        padding: 6px 0px;
+        a {
+          color: black;
+        }
+        &:not(:last-child) {
+          border-bottom: #B6CFEB solid 1px;
+        }
+      }
+    }
+  }
+  img.banner {
+    width: 100%;
+    margin-bottom: 24px;
   }
 }
